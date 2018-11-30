@@ -11,6 +11,7 @@ def get_str(info):
     return json.dumps(info, encoding='UTF-8', ensure_ascii=False)
 
 
+
 response1 = {
         "medical_id": 1,
         "create_time": "2018-11-09",
