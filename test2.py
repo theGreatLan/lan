@@ -14,7 +14,7 @@ def get_str(info):
 
 
 response1 = {
-        "medical_id": 2,
+        "medical_id": 3,
         "create_time": "2018-11-09",
         "ss_type_name": "中医医院",
         "occur_time": "2018年11月08日",
