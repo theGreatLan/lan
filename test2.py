@@ -12,6 +12,7 @@ def get_str(info):
 
 
 
+
 response1 = {
         "medical_id": 1,
         "create_time": "2018-11-09",
