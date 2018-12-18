@@ -1,3 +1,2 @@
 # lan
-lan's code
-2018 target
+lan's code  
