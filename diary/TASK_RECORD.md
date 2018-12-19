@@ -10,6 +10,7 @@
 ### 2018-12-19
 > 第二天  
 > - 5页导论
-> - 20页python基础 
+> - 20页python基础  
+> 为什么说使用isinstance不是个好习惯，使用多态会更好一些？
 
-熟悉了python的 MIMEText和smtplib模块，用代码实现了简单邮件的发送。连续的第二天。
+连续的第二天。熟悉了python的 MIMEText和smtplib模块，用代码实现了简单邮件的发送。
