@@ -12,4 +12,4 @@
 > - 5页导论
 > - 20页python基础 
 
-熟悉了python的 MIMEText和smtplib模块，用代码实现了简单邮件的发送。
+熟悉了python的 MIMEText和smtplib模块，用代码实现了简单邮件的发送。连续的第二天。
