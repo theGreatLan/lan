@@ -38,10 +38,10 @@ content = '''
 
 msg = MIMEText(content, 'html', 'utf-8')
 
-from_addr = 'jzvocie@126.com'
-password = ''   # smtp授权码
+from_addr = '*******'
+password = '*******'   # smtp授权码
 smtp_server = 'smtp.126.com'
-to_addr = '290910802@qq.com'
+to_addr = '********'
 
 msg['From'] = _format_addr('Python爱好者 <%s>' % from_addr)
 msg['To'] = _format_addr('管理员 <%s>' % to_addr)
