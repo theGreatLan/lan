@@ -51,7 +51,7 @@ maybe important: 迭代器 生成器。
 ### 2018-12-23
 > 第六天 完成
 > - 33页python基础
-> - 10页导论  
+> - 11页导论  
 > - sketchy：标准流。3个标准文件对象(在sys模块中的stdin、stdout和stderr)  
 是一个类文件对象，该对象实现了UNIX标准的I/O机制。  P210
 
