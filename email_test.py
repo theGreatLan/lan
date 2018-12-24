@@ -39,7 +39,7 @@ content = '''
 msg = MIMEText(content, 'html', 'utf-8')
 
 from_addr = 'jzvocie@126.com'
-password = 'jzvoice123456'   # smtp授权码
+password = ''   # smtp授权码
 smtp_server = 'smtp.126.com'
 to_addr = '290910802@qq.com'
 
