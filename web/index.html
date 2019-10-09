@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<style>
+	.main_content{
+		margin: 30vh auto;
+		text-align: center
+	}
+
+	.box{
+		display: flex;
+		width: 300px;
+		margin: 20px auto;
+		justify-content: space-between;
+	}
+	
+	.box div{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+		background: red;
+		text-align: center;
+		border-radius: 50%;
+		color: #fff
+	}
+	
+	.box div.blue{
+		background: blue;
+	}
+</style>
+
+
+<body>
+
+	<div class="main_content">
+		<button class="btn btn-default btn-primary" onclick="getLottery()">生成双色球</button>
+		<button class="btn btn-default " onclick="clearL()">清空</button>
+		<div id="box"></div>
+	
+	</div>
+
+
+</body>
+
+<script>
+
+	function sortNumber(a, b) {
+		return a - b
+	}
+
+	function getLottery(){
+		let redball = [], num, blueball, html = '<div class="box">';
+		blueball = Math.floor(Math.random() * 16 + 1);
+
+		for (let i = 1; i < 1000; i++) {
+			num = Math.floor(Math.random() * 33 + 1);
+			if (redball.indexOf(num) == -1) {
+				redball.push(num)
+			}
+			if (redball.length == 6) {
+				i = 1000
+			}
+		}
+
+		redball.sort(sortNumber);
+
+		for (let i of redball) {
+			html += '<div>' + i + '</div>';
+		}
+
+		html += '<div class="blue">' + blueball + '</div>';
+		html += '</div>'
+
+		$('#box').append(html);
+	}
+
+	function clearL(){
+		$('#box').empty();
+	}
+	
+
+</script>
+
+
+</html>
